@@ -1,0 +1,154 @@
+:root{
+    --color1: rgb(18,19,131);
+    --color2: rgb(148,25,30);
+    --color3: rgb(107, 18, 21);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: open sans;
+}
+
+/* My styling */
+.text-red{
+    color: rgba(255,255,255,0.5);
+}
+.bg-purple{
+    background-color: var(--color1) !important;
+}
+.bg-red{
+    background-color: var(--color2) !important;
+}
+.bg-darkred{
+    background-color: var(--color3);
+}
+
+/* Header */
+header .head-img{
+    position: relative;
+    z-index: 1500;
+}
+header img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+header h3{
+    font-family: open sans extrabold;
+    margin: 0;
+    padding: 15px;
+}
+
+/* #Hero Carousel */
+#hero-carousel .active{
+    background-color: white !important;
+}
+#hero-carousel{
+    position: relative;
+}
+#hero-carousel .img-info{
+    position: absolute;
+    bottom:50px;
+    right:50px;
+}
+
+
+/* Main */
+.main{
+    background-color: #ebebeb;
+}
+.main .active{
+    background-color: #ebebeb !important;
+    color: black;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.main .sidebar, .main .content{
+    font-size: 15px;
+}
+.main .sidebar .list-group{
+    margin-bottom: 20px;
+}
+.list-group .list-group-item:hover{
+    background-color: #ebebeb;
+}
+.main .row{
+    padding: 30px 0;
+}
+
+#notice{
+    line-height: 1.8rem;
+}
+
+
+/* Footer */
+
+/* Pre-footer */
+.pre-footer{
+    font-size: 12px;
+}
+.pre-footer ul li a{
+    color: rgba(255, 255, 255, 0.5); 
+}
+.pre-footer ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+.text-fa-bg{
+    color: white;
+}
+.text-fa{
+    color: black;
+}
+.social-icons a{
+    opacity: 0.5;
+}
+.social-icons a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+.pre-footer h6{
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 5px;
+}
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 991.98px) and (min-width: 768px) {
+    #menuBar{
+        padding: 0;
+    }
+  }
+
+
+@media screen and (max-width: 767.98px){
+    header .head-img{
+        position: initial;
+        z-index: 1500;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    header img{
+        position: initial;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .main .sidebar .list-group{
+        margin-bottom: 0;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    header h3{
+        font-size: 20px;
+    }
+}
